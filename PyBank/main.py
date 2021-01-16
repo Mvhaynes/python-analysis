@@ -55,10 +55,11 @@ net_total = f"Total: ${net_total}"
 avg_change = f"Average change: ${avg_change}"
 greatest_inc = f"Greatest Increase in Profits: {months[greatest_inc_index]} ${greatest_increase}"
 greatest_dec = f"Greates Decrease in Profits: {months[greatest_dec_index]} ${greatest_decrease}"
-    
+line_break = "-------------------------------------------------------------------"     
+
 #Print analysis 
 print("Financial Analysis")
-print("-------------------------------------------------------------------")
+print(line_break)
 print(total_months)
 print(net_total)
 print(avg_change)
@@ -70,7 +71,7 @@ output_path = os.path.join(".", "PyBank_Analysis.txt")
 new = "\n"
 with open(output_path, 'w') as text: 
     text.write("Financial Analysis" + new)
-    text.write("-------------------------------------------------------------------" + new)
+    text.write(line_break + new)
     text.write(total_months + new)
     text.write(net_total + new)
     text.write(avg_change + new)
