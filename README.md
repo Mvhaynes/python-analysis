@@ -26,7 +26,10 @@ This script analyzes a large data set [PyPoll_Resources_election_data.csv] to cr
     -------------------------------------
     Total votes: 3521001
     -------------------------------------
-
+    Correy: 20.0% (704200 votes)
+    Khan: 63.0% (2218231 votes)
+    Li: 14.0% (492940 votes)
+    O'Tooley: 3.0% (105630 votes)
     -------------------------------------
     Winner: Khan
-    -------------------------------------
+-------------------------------------

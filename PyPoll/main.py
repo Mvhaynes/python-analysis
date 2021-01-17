@@ -27,12 +27,20 @@ with open(csv_path) as csvfile:
         percent_votes = candidates.count(name) / row_count * 100
         percent_votes = round(percent_votes, 4)
         total_votes = f"{name}: {percent_votes}% ({total} votes)"
-        print(total_votes)    
+        print(total_votes)
+
+    #function to calculate number of votes for textwrite 
+    def candidate_count(name):
+        total = candidates.count(name)
+        percent_votes = candidates.count(name) / row_count * 100
+        percent_votes = round(percent_votes, 4)
+        total_votes = f"{name}: {percent_votes}% ({total} votes)"
+        text.write(total_votes + new)   
     
     #loop each unique candidate through the original list and counts total votes 
     vote_count = [candidates.count(candidate) for candidate in unique_candidates]
     name = unique_candidates
-    winner_count = max(vote_count) #finds highest voted for candidate 
+    winner_count = max(vote_count)  
     zip_candidates = zip(name, vote_count) 
     for row in zip_candidates:
         if row[1] == winner_count:
@@ -62,7 +70,7 @@ with open(csv_path) as csvfile:
         text.write(line_break + new)
         text.write(voters + new)
         text.write(line_break + new) 
-        #text.write????????
+        [candidate_count(candidate) for candidate in unique_candidates]
         text.write(line_break + new)
         text.write(winner + new)
         text.write(line_break)
