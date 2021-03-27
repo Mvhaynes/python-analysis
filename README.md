@@ -4,7 +4,7 @@ Scripts for analyzing election data and financial records.
 
 ## PyBank 
 
-This script analyzes financial records from the data set [PyBank_Resources_budget_data.csv]. 
+This script analyzes financial records from the [Pybank data set](Pybank/Resources/Pybank_Resources_budget_data.csv).
 
 The script loops through rows of data to collect the total number of records and calculates the net revenue over the entire period and add those values to a final analysis summary. The final analysis summary includes the average net change in revenue and the greatest changes to profits and losses and their corresponding dates. 
 
